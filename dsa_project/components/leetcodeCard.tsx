@@ -16,7 +16,7 @@ export function LeetcodeCard({userName}:any){
     const [loading,setLoading]=useState(true);
     useEffect(()=>{
             try{
-                axios.get("http://localhost:3000/api/leetcodedata",{
+                axios.get("https://dev-journey-zeta.vercel.app/api/leetcodedata",{
                     headers:{
                         "userId":userName
                     }
