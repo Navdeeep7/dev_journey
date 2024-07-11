@@ -20,7 +20,7 @@ export default function SignUp(){
     const [loading,setLoading]=useState(false);
     function handleOnclick(){
         setLoading(true);
-        axios.post("http://localhost:3000/api/user/signup",forminput).then(res=>{
+        axios.post("https://dev-journey-zeta.vercel.app/api/user/signup",forminput).then(res=>{
             
             alert(res.data.msg);
             setLoading(false);

@@ -28,7 +28,7 @@ export default function PlatformRatings(){
   });
   useEffect(()=>{
     try{
-      axios.get("http://localhost:3000/api/dashboard",{
+      axios.get("https://dev-journey-zeta.vercel.app/api/dashboard",{
         headers:{
           //@ts-ignore
           authorization:localStorage.getItem("token") 
