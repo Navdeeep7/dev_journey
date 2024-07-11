@@ -15,7 +15,7 @@ export default function Home() {
   <div className=' relative  '>
     <div className='h-screen'>
     <Spline
-        scene="https://prod.spline.design/l9XzaWju3Qt5PYjg/scene.splinecode" 
+        scene="https://prod.spline.design/XY7oqhIRUZTccnbD/scene.splinecode" 
       />
     </div>
     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white  z-10 grid  grid-cols-1 md:grid-cols-2 w-screen  ' >
