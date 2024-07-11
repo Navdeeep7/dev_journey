@@ -164,7 +164,7 @@ export default function Contests(){
 </div>
             </div>:  <div className="flex ">
 
-            {codechefContests.map(contest=><CodechefContestCard contestInfo={contest}/>)}
+            {codechefContests.map((contest,index)=><CodechefContestCard key={index} contestInfo={contest}/>)}
             
             </div>}
             

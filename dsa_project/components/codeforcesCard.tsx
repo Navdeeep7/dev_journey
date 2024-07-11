@@ -30,7 +30,7 @@ export default function CodeforcesCard({userName}:any){
     catch(e){
       alert(e);
     }
-    
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
     
         const getRankColor = (rank:any) => {

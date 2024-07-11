@@ -107,7 +107,7 @@ export default  function Jobs(){
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
         </div></div>: <div className="h-5/6  overflow-y-auto md:grid md:grid-cols-4 gap-3  mx-3">
  
- { jobs.map(job=><JobCard job={job}/>)}
+ { jobs.map((job,index)=><JobCard key={index} job={job}/>)}
  
  </div>}
           

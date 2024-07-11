@@ -16,7 +16,7 @@ interface User{
   Gfg_username:string
 
 }
-export default function platformRatings(){
+export default function PlatformRatings(){
   const[user,setUser]=useState<User>({
     name: "",
   email: "",

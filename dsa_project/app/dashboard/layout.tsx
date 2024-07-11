@@ -37,7 +37,7 @@ export default function RootLayout({
       alert("error fetching username");
     }
 
-   },[])
+   },[router])
    function logout(){
     localStorage.removeItem("token");
     router.push("/")

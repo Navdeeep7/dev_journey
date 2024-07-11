@@ -32,6 +32,7 @@ export function LeetcodeCard({userName}:any){
             catch(e){
                 alert(e);
             }
+             // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     
     return(
