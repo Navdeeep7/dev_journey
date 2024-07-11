@@ -68,7 +68,11 @@ export default function SignUp(){
         <div className="text-white text-md mt-4 mb-1">
             Password*
         </div>
-        <div><PasswordInput formInput={forminput} setFormput={setFormput}       /></div>
+        <div>
+        <input type="text" onChange={(e)=>{
+            setFormput({...forminput,password:e.target.value});
+        }} className="p-2 rounded-md w-72" name="" id="" placeholder='********' required/>
+        </div>
         </div>
         <div>
         <div className="text-white text-md mt-4 mb-1">
