@@ -51,13 +51,13 @@ export default function CodeforcesCard({userName}:any){
         };
     return(
         <div>
-          {loading? <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+          {loading? <div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div>:<div className="bg-cardBlue-custom rounded-lg shadow-md p-6 w-74">
+        </div>:<div className="bg-cardBlue-custom rounded-lg shadow-md p-6 ">
       <div className="flex items-center mb-12 mt-6">
         <div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-12 h-12 mr-4">

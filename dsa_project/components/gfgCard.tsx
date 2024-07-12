@@ -14,9 +14,9 @@ const GfgCard = ({ userName }:any) => {
 
   useEffect(()=>{
     try{
-      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
+      axios.get(`https://proxy.cors.sh/url=https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
         headers:{
-            'x-cors-api-key': 'temp_adfb017fadb769bcaf560cce1ff7479f'
+            'x-cors-api-key': 'temp_74ff72f283c0dbe4b4d847827c6d36b3'
         }
     }).then(res=>{
         setUserData(res.data);
@@ -32,7 +32,7 @@ const GfgCard = ({ userName }:any) => {
   },[])
   return (
     <div>
-      {loading? <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+      {loading? <div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>

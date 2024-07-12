@@ -28,7 +28,7 @@ export default function PlatformRatings(){
   });
   useEffect(()=>{
     try{
-      axios.get("https://dev-journey-zeta.vercel.app/api/dashboard",{
+      axios.get("http://localhost:3000/api/dashboard",{
         headers:{
           //@ts-ignore
           authorization:localStorage.getItem("token") 
@@ -56,11 +56,11 @@ export default function PlatformRatings(){
     
     
     return(
-        <div className="">
-             <div className="text-2xl text-white font-semibold mb-2">
+        <div className="overflow-y-auto h-screen ">
+             <div className="text-2xl text-white font-semibold mb-2 ">
                 Platform Ratings
              </div>
-             <div className="grid grid-cols-4 ">
+             <div className="grid  gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20">
               {codechef_username? <CodechefCard userName={codechef_username}/>: null}
             {codeforces_username?  <CodeforcesCard userName={codeforces_username}/>:null}
               {leetcode_username? <LeetcodeCard userName={leetcode_username}/>:null}

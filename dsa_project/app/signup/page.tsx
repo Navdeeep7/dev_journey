@@ -42,20 +42,23 @@ export default function SignUp(){
         Gfg_username:""
     })
     return(
-        <div className="bg-black h-screen md:overflow-y-hidden">
+        <div className="bg-black md:h-screen md:overflow-y-hidden">
                 <div className='text-white flex  justify-center font-semibold pt-2'>
     Start your coding journey
   </div>
+  <Link href="/">
   <div className='text-white  flex pl-4 pb-2 text-4xl font-extralight'>
   &lt;/&gt;DevJourney.com
   </div>
+  </Link>
+  
   
   <div className="flex justify-center mt-12 pb-20">
   <div className="bg-black1-100 px-2 py-8 rounded-xl ">
     <div className=" text-white text-center text-4xl font-semibold">Sign Up</div>
     
    <form action={handleOnclick}>
-   <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
+   <div className='grid grid-cols-1 md:grid-cols-2 gap-2 '>
         <div>
         <div className="text-white text-md mt-4 mb-1">
             Email* 
@@ -71,7 +74,7 @@ export default function SignUp(){
         <div>
         <input type="text" onChange={(e)=>{
             setFormput({...forminput,password:e.target.value});
-        }} className="p-2 rounded-md w-72" name="" id="" placeholder='********' required/>
+        }} className="p-2 rounded-md w-64" name="" id="" placeholder='********' required/>
         </div>
         </div>
         <div>

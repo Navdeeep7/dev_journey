@@ -36,9 +36,12 @@ export default function Signin(){
                 <div className='text-white flex  justify-center font-semibold pt-2'>
     Start your coding journey
   </div>
+  <Link href="/">
   <div className='text-white  flex pl-4 pb-2 text-4xl font-extralight'>
   &lt;/&gt;DevJourney.com
   </div>
+  </Link>
+  
   
   <div className="flex justify-center mt-16">
   <div className="bg-black1-100 px-2 py-8 rounded-xl ">

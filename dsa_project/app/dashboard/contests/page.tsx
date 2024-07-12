@@ -139,17 +139,17 @@ export default function Contests(){
     },[])
     return(
         <div className="h-screen bg-darkBlue-custom   ">
-           <div className="h-5/6  overflow-y-auto md:grid md:grid-cols-2 3xl:grid-cols-3">
+           <div className="h-5/6  overflow-y-auto grid grid-cols-1 md:grid xl:grid-cols-2 3xl:grid-cols-3">
 
             <div id="codechef contests" >
-            <div className="text-2xl text-white font-semibold mb-2">
+            <div className="text-2xl text-white font-semibold mb-2 ml-2">
                 Codechef Contests
             </div>
             <div>
                 
             </div>
             {codechefLoading?<div className="flex">
-            <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-60 shadow-md p-6  mr-3 animate-pulse">
+            <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-60 shadow-md p-6  m-2 animate-pulse">
   <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
   <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
   <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
@@ -162,7 +162,7 @@ export default function Contests(){
   <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
   <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
 </div>
-            </div>:  <div className="flex ">
+            </div>:  <div className="md:flex  grid grid-cols-2 ">
 
             {codechefContests.map((contest,index)=><CodechefContestCard key={index} contestInfo={contest}/>)}
             
@@ -174,7 +174,7 @@ export default function Contests(){
 
             {/* codeforces contests */}
             <div className="">
-            <div className="text-2xl text-white font-semibold mb-2">
+            <div className="text-2xl text-white font-semibold mb-2 ml-2">
                 Codeforces Contests
             </div>
             {codeforcesLoading? <div className="flex">
@@ -199,7 +199,7 @@ export default function Contests(){
             </div>
 
             <div className="">
-            <div className="text-2xl text-white font-semibold mb-2">
+            <div className="text-2xl text-white font-semibold mb-2 ml-2">
                 LeetCode Contests
             </div>
             {leetcodefLoading?<div className="flex">

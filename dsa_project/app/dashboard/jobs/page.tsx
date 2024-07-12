@@ -49,67 +49,69 @@ export default  function Jobs(){
     
     return(
         <div className="h-screen bg-darkBlue-custom  mt-1 ">
-            <div className="text-2xl text-white font-semibold mb-2">
-            Job Postings
+            <div className="text-2xl text-white font-semibold mb-2 ">
+              <div className="ml-2">Job Postings</div>
+            
             <input type="text" name="" id="" className="bg-darkBlue-custom border-slate-800 border-2 ml-2 rounded-full text-lg font-medium  p-1 pl-3 text-textBlue-custom " placeholder="Search jobs"onChange={(e)=>{
                 setSearchvalue(e.target.value);
             }}/>
             <button className="bg-hoverBlue-custom  rounded-full text-lg font-normal p-1 ml-2 px-2" onClick={handleSearch}>Search</button>
            </div>
-           {loading? <div className="h-5/6  overflow-y-auto md:grid md:grid-cols-4 gap-3  mx-3">
-            <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+           {loading? <div className="h-5/6  overflow-y-auto grid  gap-3 sm:grid-cols-2 lg:grid-cols-4  ">
+            <div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6  shadow-md p-6 animate-pulse ">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6  shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6  shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6  shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div><div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-74 shadow-md p-6 animate-pulse">
+        </div><div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div></div>: <div className="h-5/6  overflow-y-auto md:grid md:grid-cols-4 gap-3  mx-3">
+        </div></div>: <div className="h-5/6 grid overflow-y-auto md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3  mx-3 ">
  
  { jobs.map((job,index)=><JobCard key={index} job={job}/>)}
  
  </div>}
+ 
           
         </div>
     )

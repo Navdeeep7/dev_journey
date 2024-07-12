@@ -50,13 +50,17 @@ export default function RootLayout({
     return (
     <div className="bg-darkBlue-custom h-screen overflow-y-hidden">
       <div className="md:hidden">
-           <Navbar/>
+           <Navbar name={name}
+/>
       </div>
       <div>
               <div className="bg-cardBlue-custom p-2 m-3 rounded-xl justify-between hidden md:flex ">
-        <div className='text-white  flex items-center pl-4  text-2xl font-thin'>
-         &lt;/&gt;DevJourney.com
-        </div>
+              <Link href="/">
+  <div className='text-white  flex pl-4 pb-2 text-4xl font-extralight'>
+  &lt;/&gt;DevJourney.com
+  </div>
+  </Link>
+  
         <div className="flex items-center -mt-2">
         <div className="text-white text-2xl pr-2 ">                
           Hello {name}
@@ -101,7 +105,7 @@ export default function RootLayout({
            </div>
            
         </div>
-        <div className="md:col-span-5 mr-3 ">
+        <div className="md:col-span-5 md:mr-3 ">
       
         {children}
         </div>
