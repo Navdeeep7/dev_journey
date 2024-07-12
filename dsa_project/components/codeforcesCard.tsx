@@ -16,7 +16,7 @@ export default function CodeforcesCard({userName}:any){
 
   useEffect(()=>{
     try{
-      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/codeforces/${userName}`,{
+      axios.get(`https://api.cors.lol/https://coding-platform-profile-api.onrender.com/codeforces/${userName}`,{
         headers:{
             'x-cors-api-key': 'temp_569591514993aaff307217fd914d609f'
         }
