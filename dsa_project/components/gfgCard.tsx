@@ -14,7 +14,7 @@ const GfgCard = ({ userName }:any) => {
 
   useEffect(()=>{
     try{
-      axios.get(`https://api.cors.lol/url=https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
+      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
         headers:{
             'x-cors-api-key': 'temp_adfb017fadb769bcaf560cce1ff7479f'
         }
