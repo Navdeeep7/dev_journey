@@ -22,9 +22,9 @@ export function CodechefCard({userName}:any){
 
   useEffect(()=>{
     try{
-      axios.get(`https://api.cors.lol/url=https://coding-platform-profile-api.onrender.com/codechef/${userName}`,{
+      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/codechef/${userName}`,{
         headers:{
-            'x-cors-api-key': 'temp_569591514993aaff307217fd914d609f'
+            "x-cors-api-key":"temp_6250102632f3a4f01f2adb22d6bfb52d"
         }
     }).then(res=>{
         setUserData(res.data);

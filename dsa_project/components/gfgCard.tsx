@@ -16,7 +16,7 @@ const GfgCard = ({ userName }:any) => {
     try{
       axios.get(`https://api.cors.lol/url=https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
         headers:{
-            'x-cors-api-key': 'temp_569591514993aaff307217fd914d609f'
+            'x-cors-api-key': 'temp_74ff72f283c0dbe4b4d847827c6d36b3'
         }
     }).then(res=>{
         setUserData(res.data);
