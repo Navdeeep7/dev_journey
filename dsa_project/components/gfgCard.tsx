@@ -8,7 +8,7 @@ const CodingLogo = () => (
     </svg>
 );
 
-const GfgCard = ({ userName }:any) => {
+const GfgCard = () => {
   const[userData,setUserData]=useState<any>({});
   const [loading,setLoading]=useState(true);
 

@@ -10,7 +10,7 @@ const InfoRow = ({ label, value }:any) => (
   );
 
   
-export default function CodeforcesCard({userName}:any){
+export default function CodeforcesCard(){
   const[userData,setUserData]=useState<any>({});
   const [loading,setLoading]=useState(true);
 

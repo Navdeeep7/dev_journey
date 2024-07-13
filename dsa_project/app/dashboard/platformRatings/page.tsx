@@ -4,7 +4,7 @@ import CodeforcesCard from "@/components/codeforcesCard";
 import GfgCard from "@/components/gfgCard";
 import { LeetcodeCard } from "@/components/leetcodeCard";
 import { useState,useEffect } from "react";
-
+import axios from "axios";
 
 interface User{
   name: string,
@@ -26,7 +26,28 @@ export default function PlatformRatings(){
   Codeforces_username: "",
   Gfg_username:""
   });
+  useEffect(()=>{
+    try{
+      axios.get("http://localhost:3000/api/dashboard",{
+        headers:{
+          //@ts-ignore
+          authorization:localStorage.getItem("token") 
+             }
+      }).then(res=>{
+        if(res.data.success){
+          setUser(res.data.user);
+          
+        }
+        
   
+      })
+    }
+    catch{
+      alert("error fetching username");
+    }
+
+   },[])
+    
 
         const leetcode_username=user.Leetcode_username;
         const gfg_username=user.Gfg_username;
@@ -40,10 +61,10 @@ export default function PlatformRatings(){
                 Platform Ratings
              </div>
              <div className="grid  gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20">
-              {codechef_username? <CodechefCard />: null}
-            {codeforces_username?  <CodeforcesCard userName={codeforces_username}/>:null}
+              <CodechefCard />
+             <CodeforcesCard />
               {leetcode_username? <LeetcodeCard userName={leetcode_username}/>:null}
-              {gfg_username? <GfgCard userName={gfg_username}/>:null}
+              <GfgCard />
             
              </div>
              
