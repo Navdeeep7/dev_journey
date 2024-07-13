@@ -54,7 +54,7 @@ export default function PlatformRatings(){
     
     
     return(
-        <div className="overflow-y-auto h-screen w-full">
+        <div className="overflow-y-auto h-screen grid grid-cols-1">
              <div className="text-2xl text-white font-semibold mb-2 ">
                 Platform Ratings
              </div>
