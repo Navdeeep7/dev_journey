@@ -61,7 +61,13 @@ export default function PlatformRatings(){
              <div className="grid  gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20">
               <CodechefCard />
              <CodeforcesCard />
-              {leetcode_username? <LeetcodeCard userName={leetcode_username}/>:null}
+              {leetcode_username? <LeetcodeCard userName={leetcode_username} />:<div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
+          <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
+          <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
+          <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
+          <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
+          <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
+        </div>}
               <GfgCard />
             
              </div>
