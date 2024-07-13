@@ -28,7 +28,7 @@ export default function PlatformRatings(){
   });
   useEffect(()=>{
     try{
-      axios.get("http://localhost:3000/api/dashboard",{
+      axios.get("https://dev-journey-zeta.vercel.app/api/dashboard",{
         headers:{
           //@ts-ignore
           authorization:localStorage.getItem("token") 
@@ -50,9 +50,7 @@ export default function PlatformRatings(){
     
 
         const leetcode_username=user.Leetcode_username;
-        const gfg_username=user.Gfg_username;
-        const codechef_username=user.Codechef_username;
-        const codeforces_username=user.Codeforces_username;
+       
     
     
     return(
