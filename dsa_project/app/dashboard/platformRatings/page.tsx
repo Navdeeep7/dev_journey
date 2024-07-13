@@ -55,10 +55,10 @@ export default function PlatformRatings(){
     
     return(
         <div className="overflow-y-auto h-screen ">
-             <div className="text-2xl text-white font-semibold mb-2 mx-3">
+             <div className="text-2xl text-white font-semibold mb-2 ">
                 Platform Ratings
              </div>
-             <div className="grid  gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20">
+             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20">
               <CodechefCard />
              <CodeforcesCard />
               {leetcode_username? <LeetcodeCard userName={leetcode_username} />:<div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
