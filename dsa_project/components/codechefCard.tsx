@@ -16,19 +16,19 @@ const InfoRow = ({ label, value, title }:any) => (
 
 
 
-export function CodechefCard({userName}:any){
+export function CodechefCard(){
   const[userData,setUserData]=useState<any>({});
   const [loading,setLoading]=useState(true);
 
   useEffect(()=>{
     try{
-      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/codechef/${userName}`,{
+      axios.get("https://dev-journey-zeta.vercel.app/api/platformRatings/codechef",{
         headers:{
-            "x-cors-api-key":"temp_6250102632f3a4f01f2adb22d6bfb52d"
-        }
+            authorization:localStorage.getItem("token")
+        } 
     }).then(res=>{
-        setUserData(res.data);
-        if(res.data){
+        setUserData(res.data.userData);
+        if(res.data.success){
           setLoading(false);
         }
       })

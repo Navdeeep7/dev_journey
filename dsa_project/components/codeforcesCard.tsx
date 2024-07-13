@@ -16,13 +16,13 @@ export default function CodeforcesCard({userName}:any){
 
   useEffect(()=>{
     try{
-      axios.get(`https://proxy.cors.sh/https://coding-platform-profile-api.onrender.com/codeforces/${userName}`,{
+      axios.get("https://dev-journey-zeta.vercel.app/api/platformRatings/codeforces",{
         headers:{
-            "x-cors-api-key":"temp_74ff72f283c0dbe4b4d847827c6d36b3"
-        }
+            authorization:localStorage.getItem("token")
+        } 
     }).then(res=>{
-        setUserData(res.data);
-        if(res.data){
+        setUserData(res.data.userData);
+        if(res.data.userData){
           setLoading(false);
         }
       })

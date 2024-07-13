@@ -55,8 +55,8 @@ export default function RootLayout({
       </div>
       <div>
               <div className="bg-cardBlue-custom p-2 m-3 rounded-xl justify-between hidden md:flex ">
-              <Link href="/">
-  <div className='text-white  flex pl-4 pb-2 text-4xl font-extralight'>
+              <Link href="/" className="text-white  flex  text-4xl font-thin items-center">
+  <div className='text-white  flex text-4xl font-'>
   &lt;/&gt;DevJourney.com
   </div>
   </Link>

@@ -21,7 +21,7 @@ export default  function Jobs(){
               sort: 'mostRelevant'
             },
             headers: {
-            //  'x-rapidapi-key': 'debdbf5b4bmshf83fa96831a5309p1f42e9jsnf1e077964afc',
+             'x-rapidapi-key': 'debdbf5b4bmshf83fa96831a5309p1f42e9jsnf1e077964afc',
               'x-rapidapi-host': 'linkedin-data-api.p.rapidapi.com',
                "x-cors-api-key":"temp_adfb017fadb769bcaf560cce1ff7479f"
             }

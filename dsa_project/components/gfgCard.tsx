@@ -14,12 +14,12 @@ const GfgCard = ({ userName }:any) => {
 
   useEffect(()=>{
     try{
-      axios.get(`https://proxy.cors.sh/url=https://coding-platform-profile-api.onrender.com/geeksforgeeks/${userName}`,{
+      axios.get("https://dev-journey-zeta.vercel.app/api/platformRatings/gfg",{
         headers:{
-            'x-cors-api-key': 'temp_fef14be03105f89a6f984655f43db41f'
-        }
+            authorization:localStorage.getItem("token")
+        } 
     }).then(res=>{
-        setUserData(res.data);
+        setUserData(res.data.userData);
         if(res.data){
           setLoading(false);
         }
