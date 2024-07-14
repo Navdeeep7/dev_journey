@@ -55,8 +55,8 @@ export default function RootLayout({
       </div>
       <div>
               <div className="bg-cardBlue-custom p-2 m-3 rounded-xl justify-between hidden md:flex ">
-              <Link href="/" className="text-white  flex  text-4xl font-thin items-center">
-  <div className='text-white  flex text-4xl font-'>
+              <Link href="/" className="text-white cursor-pointer  flex  text-4xl font-thin items-center">
+  <div className='text-white cursor-pointer  flex text-4xl font-'>
   &lt;/&gt;DevJourney.com
   </div>
   </Link>
@@ -78,28 +78,28 @@ export default function RootLayout({
       <div className="flex justify-center md:grid md:grid-cols-6 overflow-y-hidden">
         <div className="bg-cardBlue-custom flex flex-col mx-3 rounded-xl h-full  items-center hidden md:flex">
            <div className="flex flex-col text-md mt-4">
-           <div className={`hover:bg-hoverBlue-custom p-2 ${contest ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom`} onClick={()=>{
+           <div className={`hover:bg-hoverBlue-custom p-2 ${contest ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `} onClick={()=>{
             setContest(true);
             setJob(false);
             setRating(false);
             router.push("/dashboard/contests")
            }} >Contests </div>
-           <div className={`hover:bg-hoverBlue-custom p-2 my-2 pr-6 hover:text-white ${rating ? 'bg-hoverBlue-custom text-white' : ""} rounded-lg text-textBlue-custom`}  onClick={()=>{
+           <div className={`hover:bg-hoverBlue-custom p-2 my-2 pr-6 hover:text-white ${rating ? 'bg-hoverBlue-custom text-white' : ""} rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             setContest(false);
             setJob(false);
             setRating(true);
             router.push("/dashboard/platformRatings")
            }}>Platform Ratings </div>
-           <div className={`hover:bg-hoverBlue-custom p-2 ${job ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom`} onClick={()=>{
+           <div className={`hover:bg-hoverBlue-custom p-2 ${job ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `} onClick={()=>{
             setContest(false);
             setJob(true);
             setRating(false);
             router.push("/dashboard/jobs")
            }}>Jobs </div>
-           <div className={`hover:bg-hoverBlue-custom p-2 my-0.5 hover:text-white rounded-lg text-textBlue-custom`}  onClick={()=>{
+           <div className={`hover:bg-hoverBlue-custom p-2 my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             router.push("/signup")
            }}>Sign Up </div>
-           <div className={`hover:bg-hoverBlue-custom p-2  my-0.5 hover:text-white rounded-lg text-textBlue-custom`}  onClick={()=>{
+           <div className={`hover:bg-hoverBlue-custom p-2  my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             router.push("/signin")
            }}>Sign In </div>
            </div>
