@@ -105,7 +105,7 @@ export default function RootLayout({
            </div>
            
         </div>
-        <div className="md:col-span-5 md:mr-3 ">
+        <div className="md:col-span-5 md:mr-3 w-full">
       
         {children}
         </div>
