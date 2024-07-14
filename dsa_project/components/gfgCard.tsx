@@ -38,7 +38,7 @@ const GfgCard = () => {
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-1/2 h-8 bg-cardBlue-light rounded"></div>
-        </div>:<div className="bg-cardBlue-custom rounded-lg shadow-md p-6 w-74">
+        </div>:<div className="bg-cardBlue-custom rounded-lg shadow-md p-6 ">
       <div className="flex items-center mb-4">
         <CodingLogo />
         <div>
