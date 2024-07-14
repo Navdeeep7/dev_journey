@@ -54,7 +54,7 @@ export default function PlatformRatings(){
     
     
     return(
-        <div className=" h-screen mt-1">
+        <div className=" h-screen mt-1 mx-3">
              <div className="text-2xl text-white font-semibold mb-2 ">
                 Platform Ratings
              </div>
