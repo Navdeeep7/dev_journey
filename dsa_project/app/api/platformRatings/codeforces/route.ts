@@ -47,7 +47,7 @@ export async function GET(req:NextRequest){
             const user=await User.findOne({_id:userId});
             console.log(e);
             return NextResponse.json({
-                userData:user,
+                userData:e,
                 success:false
             })
     
