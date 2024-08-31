@@ -26,7 +26,7 @@ export default function Signin(){
             alert(res.data.msg);
             setLoading(false)
             if(res.data.success){
-                router.push("/dashboard/contests")
+                router.push("/dashboard/platformRatings")
                 localStorage.setItem("token",res.data.token);
             }
         })

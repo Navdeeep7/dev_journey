@@ -24,12 +24,24 @@ const userSchema = new mongoose.Schema({
   Codeforces_username: String,
   Gfg_username:String
 });
+const projectSchema=new mongoose.Schema({
+  Title:String,
+  Email:String,
+  Description:String,
+  Tags:String,
+  Project_link:String,
+  Github_link:String
+
+})
 connectToDb();
 let User:any;
+let Project:any;
 try {
   User = mongoose.model('User');
+  Project = mongoose.model('Project')
 } catch (error) {
   User = mongoose.model('User', userSchema);
+  Project = mongoose.model("Project",projectSchema);
 }
 
-export { User ,connectToDb};
+export { User,Project ,connectToDb};

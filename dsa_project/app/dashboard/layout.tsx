@@ -42,10 +42,11 @@ export default function RootLayout({
     localStorage.removeItem("token");
     router.push("/")
    }
-   const[contest,setContest]=useState(true);
-   const[rating,setRating]=useState(false);
+   const[contest,setContest]=useState(false);
+   const[rating,setRating]=useState(true);
    const[job,setJob]=useState(false);
-   
+   const[project,setProject]=useState(false);
+   const[exploreProjects,setExploreProjects]=useState(false);
 
     return (
     <div className="bg-darkBlue-custom h-screen overflow-y-hidden">
@@ -82,23 +83,49 @@ export default function RootLayout({
             setContest(true);
             setJob(false);
             setRating(false);
+            setProject(false);
+            setExploreProjects(false);
+
             router.push("/dashboard/contests")
            }} >Contests </div>
            <div className={`hover:bg-hoverBlue-custom p-2 my-2 pr-6 hover:text-white ${rating ? 'bg-hoverBlue-custom text-white' : ""} rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             setContest(false);
             setJob(false);
             setRating(true);
+            setProject(false);
+            setExploreProjects(false);
+
             router.push("/dashboard/platformRatings")
            }}>Platform Ratings </div>
            <div className={`hover:bg-hoverBlue-custom p-2 ${job ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `} onClick={()=>{
             setContest(false);
             setJob(true);
             setRating(false);
+            setProject(false);
+            setExploreProjects(false);
+
             router.push("/dashboard/jobs")
            }}>Jobs </div>
+           <div className={`hover:bg-hoverBlue-custom p-2 ${project ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
+            setContest(false);
+            setJob(false);
+            setRating(false);
+            setProject(true);
+            setExploreProjects(false);
+            router.push("/dashboard/projects")
+           }}>Projects </div>
+           <div className={`hover:bg-hoverBlue-custom p-2 ${exploreProjects ? 'bg-hoverBlue-custom text-white' : ""} my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
+            setContest(false);
+            setJob(false);
+            setRating(false);
+            setProject(false);
+            setExploreProjects(true);
+            router.push("/dashboard/exploreProjects")
+           }}>Explore Projects </div>
            <div className={`hover:bg-hoverBlue-custom p-2 my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             router.push("/signup")
            }}>Sign Up </div>
+           
            <div className={`hover:bg-hoverBlue-custom p-2  my-0.5 hover:text-white rounded-lg text-textBlue-custom cursor-pointer `}  onClick={()=>{
             router.push("/signin")
            }}>Sign In </div>

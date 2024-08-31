@@ -14,9 +14,9 @@ export default function Home() {
   </div>
   <div className=' relative  '>
     <div className='h-screen '>
-    <Spline
+    {/* <Spline
         scene="https://prod.spline.design/HebvSUgFe4zNf0rF/scene.splinecode" 
-      />
+      /> */} 
     </div>
     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white  z-10 grid  grid-cols-1 md:grid-cols-2 w-screen  ' >
     <div className='p-4 w-5/6 bg-black ml-2 rounded-xl border-black md:bg-transparent md:ml-0'>
@@ -27,7 +27,7 @@ export default function Home() {
     <div className='text-lg pt-4'>
     DevJourney is your companion on the path to becoming a skilled developer. Discover resources, tips, and community support to navigate your coding adventure.
     </div>
-   <Link href="/dashboard/contests"> <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 mt-4">
+   <Link href="/dashboard/platformRatings"> <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 mt-4">
 <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
 Explore DevJourney
 </span>

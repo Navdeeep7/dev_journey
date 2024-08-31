@@ -26,7 +26,7 @@ export async function POST(req:NextRequest){
 
 
     });
-    const token=jwt.sign({userid:user._id},"secret");
+    const token=jwt.sign({userid:user._id,email:user.email},"secret");
     return NextResponse.json({
         token:token,
         msg:"User created successfully",
