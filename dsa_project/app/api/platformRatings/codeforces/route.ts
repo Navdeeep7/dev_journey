@@ -28,8 +28,7 @@ export async function GET(req:NextRequest){
         if(user){
            var userName=user.Codeforces_username;
          
-            var userData=await axios.get(`https://coding-platform-profile-api.onrender.com/codeforces/${userName}`);
-                
+            var userData=await axios.get(`https://codeforces.com/api/user.info?handles=${userName}&checkHistoricHandles=false`);
                 
            if(userData.data){
             return NextResponse.json({

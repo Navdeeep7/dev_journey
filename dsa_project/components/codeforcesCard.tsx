@@ -67,16 +67,16 @@ export default function CodeforcesCard(){
 
         </div>
         <div>
-          <h2 className="text-2xl  text-white">{userData.username}</h2>
+          <h2 className="text-2xl  text-white">{userData.result[0].handle}</h2>
           
           
         </div>
       </div>
       <div className="space-y-2">
-        <InfoRow label="Rating" value={userData.rating} />
-        <InfoRow label="Level" value={userData.level} />
-        <InfoRow label="Max Rating" value={userData.highest_rating} />
-        <InfoRow label="Total problems solved" value={userData.total_problems_solved} />
+        <InfoRow label="Rating" value={userData.result[0].rating} />
+        <InfoRow label="Rank" value={userData.result[0].rank} />
+        <InfoRow label="Max Rating" value={userData.result[0].maxRating} />
+        <InfoRow label="Max Rank" value={userData.result[0].maxRank} />
         
       </div>
     </div>}
