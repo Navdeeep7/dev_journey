@@ -19,7 +19,7 @@ const InfoRow = ({ label, value, title }:any) => (
 export function CodechefCard(){
   const[userData,setUserData]=useState<any>({});
   const [loading,setLoading]=useState(true);
-
+ 
   useEffect(()=>{
     try{
       axios.get("https://dev-journey-zeta.vercel.app/api/platformRatings/codechef",{

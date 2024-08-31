@@ -18,14 +18,15 @@ interface User{
 }
 export default function PlatformRatings(){
   const[user,setUser]=useState<User>({
-    name: "",
-  email: "",
-  password: "",
-  Leetcode_username: "",
-  Codechef_username: "",
-  Codeforces_username: "",
-  Gfg_username:""
+    name: " ",
+  email: " ",
+  password: " ",
+  Leetcode_username: " ",
+  Codechef_username: " ",
+  Codeforces_username: " ",
+  Gfg_username:" "
   });
+  const[loading,setLoading]=useState(true);
   useEffect(()=>{
     try{
       axios.get("https://dev-journey-zeta.vercel.app/api/dashboard",{
@@ -36,7 +37,7 @@ export default function PlatformRatings(){
       }).then(res=>{
         if(res.data.success){
           setUser(res.data.user);
-          
+          setLoading(false);
         }
         
   
@@ -61,7 +62,7 @@ export default function PlatformRatings(){
              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20 overflow-y-auto h-5/6 pb-20">
               <CodechefCard />
              <CodeforcesCard />
-              {leetcode_username? <LeetcodeCard userName={leetcode_username} />:<div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
+              {!loading ? <LeetcodeCard userName={leetcode_username} />:<div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
           <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
           <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
