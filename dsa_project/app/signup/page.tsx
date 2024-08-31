@@ -42,7 +42,7 @@ export default function SignUp(){
         Gfg_username:""
     })
     return(
-        <div className="bg-black md:h-screen md:overflow-y-hidden">
+        <div className="bg-black ">
                 <div className='text-white flex  justify-center font-semibold pt-2'>
     Start your coding journey
   </div>
