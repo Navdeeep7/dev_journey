@@ -19,7 +19,7 @@ export default function ExploreProjects(){
             <div className="text-2xl text-white font-semibold mb-2 ml-2 ">
                 Explore Projects 
             </div>
-           {loading ? <div> </div> : <div> {projects.map((p:any)=><AllProjectCard project={p}/>)}</div>}
+           {loading ? <div> </div> : <div> {projects.map((p:any,key:any)=><AllProjectCard key={key} project={p}/>)}</div>}
 
             </div>
         </div>

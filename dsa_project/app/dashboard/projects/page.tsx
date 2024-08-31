@@ -125,7 +125,7 @@ export default function Projects(){
             <div className="">
             <div className="text-2xl text-white font-semibold mb-2 ml-2 ">
                 Your Projects
-            </div> {projectLoading ? <div> </div> : <div> {project.map((pro:any)=><ProjectCard handleDelete={onDelete} project={pro}/>)}</div>}
+            </div> {projectLoading ? <div> </div> : <div> {project.map((pro:any,key:any)=><ProjectCard key={key} handleDelete={onDelete} project={pro}/>)}</div>}
               
 
             </div>
