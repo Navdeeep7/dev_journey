@@ -19,7 +19,7 @@ export async function POST(req:NextRequest){
     const email=checkUser.email;
 
     const body=await req.json();
-    connectToDb();
+    await connectToDb();
     const user=await User.findOne({email:email});
 
     const project=await Project.create({
