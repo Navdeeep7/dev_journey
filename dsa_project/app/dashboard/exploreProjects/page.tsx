@@ -14,7 +14,7 @@ export default function ExploreProjects(){
         })
     },[])
     return(
-        <div className="h-3/6 overflow-y-auto ">
+        <div className="h-5/6 overflow-y-auto ">
             <div className=" mr-3 ">
             <div className="text-2xl text-white font-semibold mb-2 ml-2 ">
                 Explore Projects 
