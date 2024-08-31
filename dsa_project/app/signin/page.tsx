@@ -17,8 +17,8 @@ export default function Signin(){
     setIsPasswordVisible((prevState) => !prevState);
   }
     const [signinInput,setSigninput]=useState<SignInput>({
-        email: '',
-        password: ''
+        email: 'johndoe@gmail.com',
+        password: 'john12'
     })
     function handleSignin(){
         setLoading(true)
@@ -52,14 +52,14 @@ export default function Signin(){
         <div className="text-white text-md mt-4 mb-1">
             Email
         </div>
-        <div><input type="email" onChange={(e)=>{
+        <div><input type="email" value={signinInput.email} onChange={(e)=>{
             setSigninput({...signinInput,email:e.target.value});
         }} className="p-2 rounded-md w-72" name="" id="" placeholder='abc@gmail.com' required/></div>
         <div className="text-white text-md mt-4 mb-1">
             Password
         </div>
         <div>
-        <input type="text" onChange={(e)=>{
+        <input type="text" value={signinInput.password} onChange={(e)=>{
             setSigninput({...signinInput,password:e.target.value});
         }} className="p-2 rounded-md w-72" name="" id="" placeholder='********' required/>
         

@@ -83,7 +83,7 @@ export default function SignUp(){
         </div>
         <div><input type="text" onChange={(e)=>{
             setFormput({...forminput,name:e.target.value})
-        }} required className="p-2 rounded-md w-64" name="" id="" placeholder='abc@gmail.com' /></div>
+        }} required className="p-2 rounded-md w-64" name="" id="" placeholder='' /></div>
         </div>
         <div>
         <div className="text-white text-md mt-4 mb-1">
@@ -91,7 +91,7 @@ export default function SignUp(){
         </div>
         <div><input type="text" onChange={(e)=>{
             setFormput({...forminput,Leetcode_username:e.target.value})
-        }} className="p-2 rounded-md w-64" name="" id="" placeholder='abc@gmail.com' /></div>
+        }} className="p-2 rounded-md w-64" name="" id="" placeholder='' /></div>
         </div>
         <div>
         <div className="text-white text-md mt-4 mb-1">
@@ -99,7 +99,7 @@ export default function SignUp(){
         </div>
         <div><input type="text" onChange={(e)=>{
             setFormput({...forminput,Codechef_username:e.target.value})
-        }} className="p-2 rounded-md w-64" name="" id="" placeholder='abc@gmail.com' /></div>
+        }} className="p-2 rounded-md w-64" name="" id="" placeholder='' /></div>
         </div>
         <div>
         <div className="text-white text-md mt-4 mb-1">
@@ -107,7 +107,7 @@ export default function SignUp(){
         </div>
         <div><input type="text" onChange={(e)=>{
             setFormput({...forminput,Gfg_username:e.target.value})
-        }} className="p-2 rounded-md w-64" name="" id="" placeholder='abc@gmail.com' /></div>
+        }} className="p-2 rounded-md w-64" name="" id="" placeholder='' /></div>
         </div>
         <div>
         <div className="text-white text-md mt-4 mb-1">
@@ -115,7 +115,7 @@ export default function SignUp(){
         </div>
         <div><input type="text" onChange={(e)=>{
             setFormput({...forminput,Codeforces_username:e.target.value})
-        }} className="p-2 rounded-md w-64" name="" id="" placeholder='abc@gmail.com' /></div>
+        }} className="p-2 rounded-md w-64" name="" id="" placeholder='' /></div>
         </div>
         
     </div>
