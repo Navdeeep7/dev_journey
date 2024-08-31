@@ -24,7 +24,7 @@ export default function PlatformRatings(){
   Leetcode_username: "",
   Codechef_username: "",
   Codeforces_username: "",
-  Gfg_username:" "
+  Gfg_username:""
   });
   const[loading,setLoading]=useState(true);
   useEffect(()=>{
