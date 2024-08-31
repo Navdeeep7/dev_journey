@@ -60,7 +60,7 @@ export default function PlatformRatings(){
              <div className="text-2xl text-white font-semibold mb-2 ">
                 Platform Ratings
              </div>
-             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20 overflow-y-auto h-5/6 pb-20">
+             {loading ? <div></div> : <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4 sm:mb-0 mb-20 overflow-y-auto h-5/6 pb-20">
               <CodechefCard />
              <CodeforcesCard />
               {!loading ? <LeetcodeCard userName={user.Leetcode_username} />:<div className="skeleton-loader  h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 shadow-md p-6 animate-pulse">
@@ -72,7 +72,7 @@ export default function PlatformRatings(){
         </div>}
               <GfgCard />
             
-             </div>
+             </div>}
              
         </div>
     )}
