@@ -20,7 +20,7 @@ const GfgCard = () => {
         } 
     }).then(res=>{
         setUserData(res.data.userData);
-        if(res.data){
+        if(res.status===200){
           setLoading(false);
         }
       })
