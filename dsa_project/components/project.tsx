@@ -38,7 +38,7 @@ export default function ProjectCard({project,handleDelete}){
            <h3 className="text-gray-400">Description:{project.Description}</h3>
            <h3 className="text-gray-400">Github Link: <a href={project.Github_link}  className='text-blue-300 underline'>Github</a></h3>
            <h3 className="text-gray-400">Deployment Link: <a href={project.Project_link}  className='text-blue-300 underline'>{project.Title}</a></h3>
-           <div className='flex '> {array.map((tag:any)=><Tag text={tag}/>)}</div>
+           <div className='flex '> {array.map((tag:any,key:any)=><Tag key={key} text={tag}/>)}</div>
            <button
       onClick={onDelete}
       className="flex items-center justify-center px-4 py-1 bg-red-600 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75 transition duration-300 ease-in-out my-1"

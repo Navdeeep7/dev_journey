@@ -20,7 +20,7 @@ export default function AllProjectCard({project}){
            <h3 className="text-gray-400">Description:{project.Description}</h3>
            <h3 className="text-gray-400">Github Link: <a href={project.Github_link} className='text-blue-300 underline'>Github</a></h3>
            <h3 className="text-gray-400">Deployment Link: <a href={project.Project_link}  className='text-blue-300 underline'>{project.Title}</a></h3>
-           <div className='flex '> {array.map((tag:any)=><Tag text={tag}/>)}</div>
+           <div className='flex '> {array.map((tag:any,key:any)=><Tag key={key} text={tag}/>)}</div>
            
 
         </div>
