@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Platform Ratings', href: '/dashboard/platformRatings', current: false },
   { name: 'Jobs', href: '/dashboard/jobs', current: false },
   { name: 'Projects', href: '/dashboard/projects', current: false },
+  { name: 'Explore Projects', href: '/dashboard/exploreProjects', current: false },
   { name: 'Log Out', href: '/signin', current: false },
 ]
 //@ts-ignore
