@@ -13,7 +13,7 @@ export default function Home() {
   &lt;/&gt;DevJourney.com
   </div>
   <div className=' relative  '>
-    <div className='h-screen '>
+    <div className='h-screen hidden md:block '>
     <Spline
         scene="https://prod.spline.design/HebvSUgFe4zNf0rF/scene.splinecode" 
       /> 
