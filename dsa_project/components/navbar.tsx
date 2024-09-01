@@ -3,7 +3,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 const navigation = [
-  { name: 'Contests', href: '/dashboard/contests', current: true},
+  { name: 'Contests', href: '/dashboard/contests', current: false},
   { name: 'Platform Ratings', href: '/dashboard/platformRatings', current: false },
   { name: 'Jobs', href: '/dashboard/jobs', current: false },
   { name: 'Projects', href: '/dashboard/projects', current: false },
