@@ -32,8 +32,8 @@ export default function ProjectCard({project,handleDelete}){
    
   
     return(
-        <div className="bg-cardBlue-custom rounded-lg shadow-md w-full pl-2 pt-2 my-2 pb-2">
-           <h1 className="text-gray-400 text-2xl font-semibold ">{project.Title}</h1>
+        <div className="bg-cardBlue-custom rounded-lg shadow-md w-full pl-2 pt-2 my-3 pb-2">
+           <h1 className="text-gray-300 text-3xl font-semibold ">{project.Title}</h1>
            
            <h3 className="text-gray-400">Description:{project.Description}</h3>
            <h3 className="text-gray-400">Github Link: <a href={project.Github_link}  className='text-blue-300 underline'>Github</a></h3>

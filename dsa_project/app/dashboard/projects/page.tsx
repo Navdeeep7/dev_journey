@@ -48,7 +48,9 @@ export default function Projects(){
             setProjectLoading(false);
         });
     }
-     function onSubmit(){
+    //@ts-ignore
+     function onSubmit(e){
+      e.preventDefault();
         setLoading(true);
         axios.post(
             "https://dev-journey-zeta.vercel.app/api/project", 
@@ -87,7 +89,7 @@ export default function Projects(){
         <div className="h-screen overflow-y-auto ">
              <div className="h-5/6  overflow-y-auto grid grid-cols-1 md:grid  mr-3">
             
-             <div className="bg-gray-900 text-gray-100 p-8 rounded-xl shadow-2xl max-w-2xl mx-auto">
+             <div className="bg-cardBlue-custom text-gray-100 p-8 rounded-xl shadow-2xl w-full mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center text-blue-400">Post Your Project</h2>
       <form onSubmit={onSubmit} className="space-y-6">
         <div className="space-y-2">
@@ -144,7 +146,7 @@ export default function Projects(){
             name="Tags"
             value={projectInput.Tags}
             className="w-full bg-gray-800 border-gray-700 border rounded-md p-3 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-            placeholder="Enter tags (comma separated)"
+            placeholder="Enter tags (space separated)"
             onChange={(e) => {
                 setProjectInput({...projectInput, Tags: e.target.value})
             }}
@@ -160,7 +162,7 @@ export default function Projects(){
           </label>
           <input
             id="Project_link"
-            type="url"
+            type="text "
             name="Project_link"
             required
             value={projectInput.Project_link}
@@ -181,7 +183,7 @@ export default function Projects(){
           </label>
           <input
             id="Github_link"
-            type="url"
+            type="text"
             name="Github_link"
             required
             value={projectInput.Github_link}
@@ -215,7 +217,7 @@ export default function Projects(){
 
 
             <div className="">
-            <div className="text-2xl text-white font-semibold mb-2 ml-2 ">
+            <div className=" ml-2 flex justify-center text-3xl font-bold my-6 text-center text-blue-400">
                 Your Projects
             </div> {projectLoading ? <div> </div> : <div> {project.map((pro:any,key:any)=><ProjectCard key={key} handleDelete={onDelete} project={pro}/>)}</div>}
               
