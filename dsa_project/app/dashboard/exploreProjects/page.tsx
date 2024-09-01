@@ -15,8 +15,8 @@ export default function ExploreProjects(){
     },[])
     return(
         <div className="h-screen overflow-y-auto ">
-            <div className="h-5/6 overflow-y-auto mr-3 ">
-            <div className="text-2xl text-white font-semibold mb-2 ml-2 ">
+            <div className="h-5/6 overflow-y-auto md:mr-3 m-3 md:m-0 ">
+            <div className="text-2xl text-white font-semibold mb-2  ">
                 Explore Projects 
             </div>
            {loading ? <div> </div> : <div className="grid grid-cols-1 sm:grid-cols-2  gap-3"> {projects.map((p:any,key:any)=><AllProjectCard key={key} project={p}/>)}</div>}

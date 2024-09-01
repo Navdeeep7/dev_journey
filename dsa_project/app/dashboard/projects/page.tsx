@@ -87,7 +87,7 @@ export default function Projects(){
     return(
         <>
         <div className="h-screen overflow-y-auto ">
-             <div className="h-5/6  overflow-y-auto grid grid-cols-1 md:grid  mr-3">
+             <div className="h-5/6  overflow-y-auto grid grid-cols-1 md:grid  md:mr-3 m-3 md:m-0">
             
              <div className="bg-cardBlue-custom text-gray-100 p-8 rounded-xl shadow-2xl w-full mx-auto">
       <h2 className="text-3xl font-bold mb-6 text-center text-blue-400">Post Your Project</h2>
