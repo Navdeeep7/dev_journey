@@ -14,7 +14,7 @@ export default function AllProjectCard({project}) {
   const tags = project.Tags.split(' ');
 
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-102 my-4 max-w-2xl mx-auto">
+    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-102  max-w-2xl mx-auto">
       <div className="p-6">
         <h2 className="text-3xl font-bold text-white mb-2">{project.Title}</h2>
         <p className="text-gray-400 mb-4">

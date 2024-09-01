@@ -48,7 +48,7 @@ export default  function Jobs(){
 
     
     return(
-        <div className="h-screen bg-darkBlue-custom  mt-1 ">
+        <div className="h-screen bg-darkBlue-custom   ">
             <div className="text-2xl text-white font-semibold mb-2 ">
               <div className="ml-2">Job Postings</div>
             
