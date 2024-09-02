@@ -149,7 +149,7 @@ export default function Contests(){
                 
             </div>
             {codechefLoading?<div className="flex">
-            <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-60 shadow-md p-6  m-2 animate-pulse">
+            <div className="skeleton-loader w-74 h-80 bg-cardBlue-custom rounded-lg shadow-md p-6 w-60 shadow-md p-6  animate-pulse">
   <div className="w-3/4 h-6 bg-cardBlue-light rounded mb-4"></div>
   <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>
   <div className="w-full h-4 bg-cardBlue-light rounded mb-2"></div>

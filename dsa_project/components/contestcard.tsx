@@ -3,7 +3,7 @@ import Link from 'next/link'
 export function CodechefContestCard({contestInfo}:any){
     return(
         < div className='md:mr-3 mb-2' >
-                    <div className="bg-cardBlue-custom m-2 md:w-60 text-white flex flex-col items-center p-4 rounded-xl ">
+                    <div className="bg-cardBlue-custom  md:w-72 text-white flex flex-col items-center p-4 rounded-xl ">
                         <div className="flex justify-center text-xl mt-2">
                         {contestInfo.contest_code}
                         </div>
@@ -44,7 +44,7 @@ export function CodeforcesContestCard({contestInfo}:any){
     return(
         <div>
             < div className=' md:mr-3 mb-2 ' >
-                    <div className="bg-cardBlue-custom m-2 md:w-60 text-white flex flex-col items-center p-4 rounded-xl ">
+                    <div className="bg-cardBlue-custom  md:w-72 text-white flex flex-col items-center p-4 rounded-xl ">
                         <div className="flex justify-center text-xl mt-2">
                         {contestInfo.name}
                         </div>
@@ -79,13 +79,12 @@ export function LeetcodeContestCard({contestInfo}:any){
                                     day: 'numeric',
                                     hour: 'numeric',
                                     minute: 'numeric',
-                                    second: 'numeric',
-                                    hour12: true
+                                    second: 'numeric',                                    hour12: true
                                 });
     return(
         <div>
             < div className=' md:mr-3 mb-2 ' >
-                    <div className="bg-cardBlue-custom m-2 md:w-60 text-white flex flex-col items-center p-4 rounded-xl ">
+                    <div className="bg-cardBlue-custom md:w-72 text-white flex flex-col items-center p-4 rounded-xl ">
                         <div className="flex justify-center text-xl mt-2">
                         {contestInfo.title}
                         </div>
