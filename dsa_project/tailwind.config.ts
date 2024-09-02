@@ -9,6 +9,16 @@ const config: Config = {
   theme: {
    
     extend: {
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'desktop': '1800px',
+        // => @media (min-width: 1280px) { ... }
+      },
       width: {
         '70': '17.5rem',  // 70 * 0.25rem = 17.5rem
         '74': '18.5rem',  // 74 * 0.25rem = 18.5rem
