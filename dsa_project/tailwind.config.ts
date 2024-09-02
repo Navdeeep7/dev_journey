@@ -16,7 +16,7 @@ const config: Config = {
         'laptop': '1024px',
         // => @media (min-width: 1024px) { ... }
   
-        'desktop': '1800px',
+        'desktop': '1635px',
         // => @media (min-width: 1280px) { ... }
       },
       width: {
