@@ -23,7 +23,7 @@ export default function CodeforcesCard(){
         } 
     }).then(res=>{
         setUserData(res.data.userData);
-        if(res.data.userData){
+        if(res.data.success){
           setLoading(false);
         }
       })
